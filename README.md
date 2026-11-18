@@ -62,6 +62,4 @@ Every new project should reuse the parts that make sense and extend them when ne
 
 ---
 
-**Build to Business | 2026**
-
 Build products. Launch projects. Create value.

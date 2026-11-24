@@ -2,7 +2,7 @@ import express from "express";
 import swaggerConfig from "./src/config/swagger.config.js";
 import AllExpceptionHandler from "./src/common/exception/all-exception.handler.js";
 import NotFoundHandler from "./src/common/exception/not-found.handler.js";
-import AppRotuer from "./src/module/app.routes.js";
+import AppRouter from "./src/module/app.routes.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser(process.env.COOKIE_SECRET_KEY));
 
 // Routes
-app.use(AppRotuer);
+app.use(AppRouter);
 
 // swagger
 swaggerConfig(app);
